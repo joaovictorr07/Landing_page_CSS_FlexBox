@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item {
+            background-color: orange;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+        .stretch {
+            align-content: stretch;
+        }
+        .center {
+            align-content: center;
+        }
+        .flex-start {
+            align-content: flex-start;
+        }
+        .flex-end {
+            align-content: flex-end;
+        } 
+        .s-around{
+            align-content: space-around;
+        } 
+        .s-between{
+            align-content: space-between;
+        }    
+    </style>
+</head>
+<body>
+    <h1> stretch</h1>
+    <div class="container stretch">
+        <div class="item">lorem ipsum dolor sit met 1</div>
+        <div class="item">lorem ipsum</div>
+        <div class="item">hasuas  ajasb hdbd </div>
+        <div class="item">lorem ipsum dolor sit met amot dolor shdg wufge vue tosa chybhw dhshdbsjucb sjfbs </div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum </div>
+    </div>
+    <h1> center</h1>
+    <div class="container center">
+        <div class="item">lorem ipsum dolor sit met 1</div>
+        <div class="item">lorem ipsum</div>
+        <div class="item">hasuas  ajasb hdbd </div>
+        <div class="item">lorem ipsum dolor sit met amot dolor shdg wufge vue tosa chybhw dhshdbsjucb sjfbs </div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum </div>
+    </div>
+    <h1> flex-start</h1>
+    <div class="container flex-start">
+        <div class="item">lorem ipsum dolor sit met 1</div>
+        <div class="item">lorem ipsum</div>
+        <div class="item">hasuas  ajasb hdbd </div>
+        <div class="item">lorem ipsum dolor sit met amot dolor shdg wufge vue tosa chybhw dhshdbsjucb sjfbs </div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum </div>
+    </div>
+    <h1> flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">lorem ipsum dolor sit met 1</div>
+        <div class="item">lorem ipsum</div>
+        <div class="item">hasuas  ajasb hdbd </div>
+        <div class="item">lorem ipsum dolor sit met amot dolor shdg wufge vue tosa chybhw dhshdbsjucb sjfbs </div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum </div>
+    </div>
+    <h1> space-around</h1>
+    <div class="container s-around">
+        <div class="item">lorem ipsum dolor sit met 1</div>
+        <div class="item">lorem ipsum</div>
+        <div class="item">hasuas  ajasb hdbd </div>
+        <div class="item">lorem ipsum dolor sit met amot dolor shdg wufge vue tosa chybhw dhshdbsjucb sjfbs </div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum </div>
+    </div>
+    <h1> space-between</h1>
+    <div class="container s-between">
+        <div class="item">lorem ipsum dolor sit met 1</div>
+        <div class="item">lorem ipsum</div>
+        <div class="item">hasuas  ajasb hdbd </div>
+        <div class="item">lorem ipsum dolor sit met amot dolor shdg wufge vue tosa chybhw dhshdbsjucb sjfbs </div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum dolor sit</div>
+        <div class="item">lorem ipsum </div>
+    </div>
+</body>
+</html>

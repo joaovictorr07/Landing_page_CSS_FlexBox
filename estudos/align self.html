@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align self</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+            max-width: 350px;
+            margin-top: 5px;
+        }
+        .align-container {
+            align-items: center;
+        }
+        .item {
+            background-color: aqua;
+            color:aliceblue;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+            font-size: 24px;
+        }
+
+        .as-auto {
+            align-self: auto;
+        }
+
+        .as-start {
+            align-self: flex-start;
+        }
+
+        .as-end {
+            align-self: flex-end;
+        }
+
+        .as-center {
+            align-self: center;
+        }
+
+        .as-stretch {
+            align-self: stretch;
+        }
+
+        .as-baseline {
+            align-self: baseline;
+        }
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p> auto</p>
+    <div class="container align-container">
+        <div class="item as-auto">aaa</div>
+        <div class="item as-auto">bb</div>
+        <div class="item as-auto">ccdsdadadadad adadadccc</div>
+        <div class="item as-auto">ddd</div>
+    </div>
+    <p> mudanças</p>
+    <div class="container">
+        <div class="item as-center">aaa</div>
+        <div class="item as-start">bb</div>
+        <div class="item as-auto">ccdsdadadadad adadadccc</div>
+        <div class="item as-end">ddd</div>
+    </div>
+
+    <h1>column</h1>
+    <p> auto</p>
+    <div class="container align-container column">
+        <div class="item as-auto">aaa</div>
+        <div class="item as-auto">bb</div>
+        <div class="item as-auto">ccdsdadadadad adadadccc</div>
+        <div class="item as-auto">ddd</div>
+    </div>
+    <p> mudanças</p>
+    <div class="container column">
+        <div class="item as-center">aaa</div>
+        <div class="item as-start">bb</div>
+        <div class="item as-auto">ccdsdadadadad adadadccc</div>
+        <div class="item as-end">ddd</div>
+    </div>    
+</body>
+</html>
